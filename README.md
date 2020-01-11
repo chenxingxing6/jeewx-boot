@@ -27,17 +27,17 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
 
 
 ##### 手机端
-![avatar](img/11.jpg)
+![avatar](img/11.png)
 
-![avatar](img/12.jpg)
+![avatar](img/12.png)
 
-![avatar](img/13.jpg)
+![avatar](img/13.png)
 
-![avatar](img/14.jpg)
+![avatar](img/14.png)
 
-![avatar](img/15.jpg)
+![avatar](img/15.png)
 
-![avatar](img/16.jpg)
+![avatar](img/16.png)
 
 ---
 
