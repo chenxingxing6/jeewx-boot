@@ -1,16 +1,4 @@
-![输入图片说明](https://static.oschina.net/uploads/img/201908/03151039_mVqc.png "在这里输入图片标题")
-
-Jeewx-Boot  免费微信管家平台
-==========
-
-当前最新版本： 1.0.3（发布日期：20190801）
-
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/zhangdaiscott/jeewx-boot/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Author-JEECG团队-orange.svg)](http://www.jeewx.com)
-[![](https://img.shields.io/badge/version-2.0-brightgreen.svg)](https://github.com/zhangdaiscott/jeewx-boot)
-[![GitHub stars](https://img.shields.io/github/stars/zhangdaiscott/jeewx-boot.svg?style=social&label=Stars)](https://github.com/zhangdaiscott/jeewx-boot)
-[![GitHub forks](https://img.shields.io/github/forks/zhangdaiscott/jeewx-boot.svg?style=social&label=Fork)](https://github.com/zhangdaiscott/jeewx-boot)
-
+## Jeewx-Boot  免费微信管家平台
 
 项目介绍
 -----------------------------------
@@ -149,13 +137,11 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
 
 系统效果
 ----
-
 ##### PC端
 ![输入图片说明](https://static.oschina.net/uploads/img/201907/15141922_GIP8.png "在这里输入图片标题")
 ![github](https://static.oschina.net/uploads/img/201808/13105211_AVY4.png "jeecg")
 ![github](https://static.oschina.net/uploads/img/201808/11172049_s7hH.png "jeecg")
 ![github](https://static.oschina.net/uploads/img/201808/11153109_73Aj.png "jeecg")
-![输入图片说明](https://static.oschina.net/uploads/img/201907/15144608_1zcZ.png "在这里输入图片标题")
 
 
 ##### 小程序端
@@ -163,15 +149,8 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
 
 
 ##### 手机端
-
 ![github](https://static.oschina.net/uploads/img/201808/13105211_lMFh.jpg "jeecg")
-![github](https://static.oschina.net/uploads/img/201808/11195358_bi9e.png "jeecg")
 
 
 
-
-体验二维码
------------------------------------
-![github](https://static.oschina.net/uploads/img/201907/13101120_zUgL.jpg "jeewx521")
-![github](https://static.oschina.net/uploads/img/201907/13100959_naiO.jpg "jeewx521")
 
