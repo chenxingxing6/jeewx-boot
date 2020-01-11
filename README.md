@@ -10,6 +10,37 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
  -  Jeewx-Boot采用最新主流技术SpinrgBoot2.x + Mybatis + Velocity，是大家熟悉的技术，学习成本低， 新的平台实现了插件开发机制，同时也支持更高的并发、更高的大数据能力；
  
 
+系统效果
+----
+##### PC端
+![输入图片说明](https://static.oschina.net/uploads/img/201907/15141922_GIP8.png "在这里输入图片标题")
+
+![github](https://static.oschina.net/uploads/img/201808/13105211_AVY4.png "jeecg")
+
+![avatar](img/1.png)
+
+![github](https://static.oschina.net/uploads/img/201808/11172049_s7hH.png "jeecg")
+
+
+##### 小程序端
+![输入图片说明](https://static.oschina.net/uploads/img/201907/15143215_Km1G.jpg "在这里输入图片标题")
+
+
+##### 手机端
+![avatar](img/11.jpg)
+
+![avatar](img/12.jpg)
+
+![avatar](img/13.jpg)
+
+![avatar](img/14.jpg)
+
+![avatar](img/15.jpg)
+
+![avatar](img/16.jpg)
+
+---
+
 技术文档
 -----------------------------------
 
@@ -134,22 +165,6 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
 ```
 
 
-
-系统效果
-----
-##### PC端
-![输入图片说明](https://static.oschina.net/uploads/img/201907/15141922_GIP8.png "在这里输入图片标题")
-![github](https://static.oschina.net/uploads/img/201808/13105211_AVY4.png "jeecg")
-![github](https://static.oschina.net/uploads/img/201808/11172049_s7hH.png "jeecg")
-![github](https://static.oschina.net/uploads/img/201808/11153109_73Aj.png "jeecg")
-
-
-##### 小程序端
-![输入图片说明](https://static.oschina.net/uploads/img/201907/15143215_Km1G.jpg "在这里输入图片标题")
-
-
-##### 手机端
-![github](https://static.oschina.net/uploads/img/201808/13105211_lMFh.jpg "jeecg")
 
 
 
