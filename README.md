@@ -71,6 +71,17 @@ Jeewx-Boot是一款开源免费的微信管家平台。支持微信公众号、�
 | jeewx-boot-module-goldenegg | 砸金蛋活动 |  独立数据库脚步   |	
 
 
+内网穿透配置
+-----------------------------------
+```html
+location /jeewx/ {
+    proxy_set_header   Host             $host;
+    proxy_set_header  X-Real-IP  $remote_addr;
+    proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+    proxy_intercept_errors on;
+    proxy_pass http://10.1.68.96:8088/jeewx/;
+}
+```
 
 	  
 系统模块

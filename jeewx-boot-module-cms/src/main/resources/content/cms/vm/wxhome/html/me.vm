@@ -132,46 +132,31 @@
             	color: #888;
             	padding: 10px 0;
             }
-			.card {
-                text-align: center;
-                color: #888;
-				padding: 5px;
-				border-radius: 20px;
+			.bottom-tab{
+                width 100%;
+                height 50px;
+                background-color #fff;
+                position fixed;
+                left 0px;
+                bottom 0px;
+                display flex;
+                z-index 999;
 			}
-			.card-top {
-				border-top-right-radius: 20px;
-				border-top-left-radius: 20px;
-				height: 80px;
-                background: #f3e6c1;
-                border: 1px solid grey;
-				overflow: hidden;
+            .bottom-tab .tab-item{
+                display flex;
+                flex 1;
+                flex-direction column;
+                align-items center;
+                justify-content center;
+                font-size 14px;
+                color #666;
 			}
-			.card-top .card-top-left div{
-				float: left;
-
+			.bottom-tab .tab-item img{
+				width: 35%;
+				margin-bottom: 2px;
 			}
-            .card-top .card-top-left div span{
-                display: block;
-				margin-top: 2px;
-
-            }
-			.card-bottom {
-                display: flex;
-                flex-direction: row;
-				margin: 0 auto;
-                border: 1px solid #c5b8b8;
-                box-shadow: 1px 1px 2px #888888;
-			}
-			.card-bottom div{
-				width: 100%;
-				padding-top: 4px;
-				padding-left: 10px;
-				text-align: center;
-				color: grey;
-			}
-            .card-bottom div a{
-                color: grey;
-				text-decoration: none;
+            .bottom-tab .tab-item .on{
+                color: red;
             }
         </style>
 		<script type="text/javascript" src="$!{basePath}/plug-in/js/jquery-1.9.1.js"></script>
@@ -197,29 +182,6 @@
         </div>
 		##轮播图--end
 
-		<!-- card begin-->
-		<div class="card">
-			<div class="card-top">
-				<div class="card-top-left" v-on:click="cardModule()">
-					<div style="margin: 10px auto; padding-left: 10px;">
-                        <img src="https://assets.2dfire.com/frontend/514bd091677201f373cc16f44dfa3330.jpg" style="border-radius: 50%; height: 60px; width: 60px;">
-					</div>
-					<div style="margin-left: 10px; height: 100px;">
-                        <span style="margin-top: 12px;">蓝星花</span>
-						<span style="background: white; border-radius: 60%; color: black; padding: 5px 8px;">普通会员</span>
-					</div>
-				</div>
-			</div>
-			<div style="clear: both"></div>
-			<div class="card-bottom">
-				<div><a href="https://meal.2dfire.com/page_split/v1/all_coupon/00000000">券包</a></div>
-				<div>余额</div>
-				<div>积分</div>
-			</div>
-
-		</div>
-		<!-- card begin-->
-
     	<div class="tab_bd">
     		<div class="article_list article_list" id="articleList">
     			 <!-- 文章列表-begin -->
@@ -236,19 +198,37 @@
                  </a>
 				 <!-- 文章列表-end -->
     		</div>
-	    </div>
+    	</div>
+    	<!-- tab结束-->
 
 		##栏目--begin
-		<div class="tab js_plugin" id="namespace_1" data-pid="2">
-			<div class="tab_hd">
-				<div class="tab_hd_inner" id="tab">
-					<div v-for="(menu,x) in menuList" v-on:click="menuClick(menu)" type="index" :id="menu.id" :class="x===0?'item active menuitem':'item menuitem'">
-						{{menu.name}}
-					</div>
+            <div class="tab js_plugin" id="namespace_1" data-pid="2">
+                <div class="tab_hd">
+                    <div class="tab_hd_inner" id="tab">
+                        <div v-for="(menu,x) in menuList" v-on:click="menuClick(menu)" type="index" :id="menu.id" :class="x===0?'item active menuitem':'item menuitem'">
+                            {{menu.name}}
+                        </div>
+				</div>
 			</div>
-		</div>
-		##栏目--begin
+			##栏目--begin
 	</div>
+
+		##底部导航栏--begin
+	#*	<div class="bottom-tab">
+			<div class="tab-item" @click="switchTo('/home')">
+				<img :src="'/home' === $route.path ? tabBarImgArr[0].selected : tabBarImgArr[0].normal" alt="首页">
+				<span :class="{on: '/home' === $route.path}">首页</span>
+			</div>
+			<div class="tab-item" @click="switchTo('/recommend')">
+				<img :src="'/recommend' === $route.path ? tabBarImgArr[1].selected : tabBarImgArr[1].normal" alt="找店">
+				<span :class="{on: '/recommend' === $route.path}">找店</span>
+			</div>
+			<div class="tab-item" @click="switchTo('/search')">
+				<img :src="'/search' === $route.path ? tabBarImgArr[2].selected : tabBarImgArr[2].normal" alt="我的">
+				<span :class="{on: '/search' === $route.path}">我的</span>
+			</div>
+		</div>*#
+		##底部导航栏--end
 	<script>
 		var originalFlag = "";
 		var articlePageLoad = 0;
@@ -266,6 +246,10 @@
 			reqArticleUrl:'$!{basePath}/api/cms/articles.do?mainId=$!{mainId}&columnId='
           },
 		  methods: {
+                switchTo(path){
+                  console.log(this.$router)
+                  this.$router.replace(path)
+                },
 		  		wxShareConfig: function(){
 					var shareConfigUrl = "$!{basePath}/api/cms/getWxShareConfig.do?mainId=$!{mainId}";
 					shareConfigUrl = shareConfigUrl+"&pageUrl="+encodeURIComponent(location.href.split('#')[0]);
