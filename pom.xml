@@ -53,7 +53,7 @@
 
 		<aliyun-java-sdk-core.version>3.2.3</aliyun-java-sdk-core.version>
 		<aliyun-java-sdk-dysmsapi.version>1.0.0</aliyun-java-sdk-dysmsapi.version>
-		<xstream.version>1.4.7</xstream.version>
+		<xstream.version>1.4.18</xstream.version>
 		<poi.version>3.9</poi.version>
 		<hutool.version>4.5.15</hutool.version>
 		<jeewx-boot-base-api.version>1.0.0</jeewx-boot-base-api.version>
